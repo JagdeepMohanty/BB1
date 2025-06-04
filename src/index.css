@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #f59e0b;
+  --primary-dark: #d97706;
+}
+
+:root[data-theme='dark'] {
+  --primary: #fbbf24;
+  --primary-dark: #f59e0b;
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-dark transition-colors;
+  }
+
+  .mobile-nav-link {
+    @apply block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-dark transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded transition-colors;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-gray-900 dark:text-white mb-6;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden;
+  }
+}
+
+body {
+  @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white;
+}
