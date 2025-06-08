@@ -48,8 +48,7 @@ export function About() {
               <h3 className="text-xl font-semibold mb-2 text-center">Meghana Manjunath</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">Founder & CEO</p>
               <p className="mt-4 text-gray-600 dark:text-gray-300">
-                With over 20 years of experience in traditional cooking, Meghana Manjunath brings his 
-                family's secret recipes and passion for authentic flavors to Butter Batter.
+               With over 20 years of experience in traditional cooking, Meghana Manjunath brings his family's secret recipes and passion for authentic flavors to Butter Batter.
               </p>
             </div>
             <div className="card p-6">
@@ -58,10 +57,10 @@ export function About() {
                 alt="Co-founder" 
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
-              <h3 className="text-xl font-semibold mb-2 text-center">Sheethal Subhash </h3>
+              <h3 className="text-xl font-semibold mb-2 text-center">Sheethal Subhas </h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">Co-founder & COO</p>
               <p className="mt-4 text-gray-600 dark:text-gray-300">
-                Sheethal Subhash's background in food technology and business operations ensures that 
+                Sheethal Subhas's background in food technology and business operations ensures that 
                 we maintain the highest quality standards while scaling our operations.
               </p>
             </div>

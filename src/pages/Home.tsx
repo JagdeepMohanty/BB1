@@ -2,6 +2,8 @@ import React from 'react';
 import { ArrowRight, ShoppingBag, MapPin, Phone } from 'lucide-react';
 import { TestimonialCard } from '../components/TestimonialCard';
 import { ProductCard } from '../components/ProductCard';
+import { Link } from 'react-router-dom';
+
 
 export function Home() {
   const popularProducts = [
@@ -70,9 +72,9 @@ export function Home() {
               Experience the taste of tradition with our fresh, hand-ground batters and authentic chutneys.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="/products" className="btn-primary">
-                Order Now
-              </a>
+             <Link to="/products" className="btn-primary">
+             Order Now
+             </Link>
               <a href="/stores" className="btn-primary bg-white bg-opacity-20 hover:bg-opacity-30">
                 Find a Store
               </a>
