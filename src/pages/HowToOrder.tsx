@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShoppingBag, Truck, Clock, CreditCard } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function HowToOrder() {
   return (
@@ -52,7 +53,9 @@ export function HowToOrder() {
                 Get 5% off when you bring your own containers to our stores. Help us reduce 
                 plastic waste while saving money!
               </p>
-              <a href="/stores" className="btn-primary inline-block">Find Nearest Store</a>
+              <Link to="/stores" className="btn-primary inline block">
+                Find Nearest Store
+              </Link>
             </div>
             {/* <div className="card p-6">
               <h3 className="text-xl font-semibold mb-4">Subscribe & Save</h3>

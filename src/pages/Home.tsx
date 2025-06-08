@@ -75,9 +75,10 @@ export function Home() {
              <Link to="/products" className="btn-primary">
              Order Now
              </Link>
-              <a href="/stores" className="btn-primary bg-white bg-opacity-20 hover:bg-opacity-30">
-                Find a Store
-              </a>
+            <Link to="/stores" className="btn-primary bg-white bg-opacity-20 hover:bg-opacity-30">
+              Find a Store
+            </Link>
+
             </div>
           </div>
         </div>
@@ -118,7 +119,9 @@ export function Home() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Fresh batters delivered to your doorstep
               </p>
-              <a href="/how-to-order" className="btn-primary">Order Now</a>
+             <Link to="/how-to-order" className="btn-primary">
+                Order Now
+             </Link>
             </div>
             <div className="card p-6 text-center">
               <MapPin className="w-12 h-12 mx-auto mb-4 text-primary" />
@@ -126,7 +129,9 @@ export function Home() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Find your nearest Butter Batter outlet
               </p>
-              <a href="/stores" className="btn-primary">Find Store</a>
+              <Link to="/stores" className="btn-primary">
+                Find a Store
+              </Link>
             </div>
             <div className="card p-6 text-center">
               <Phone className="w-12 h-12 mx-auto mb-4 text-primary" />
@@ -134,7 +139,9 @@ export function Home() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Questions? We're here to help
               </p>
-              <a href="/contact" className="btn-primary">Get in Touch</a>
+              <Link to="/contact" className="btn-primary">
+                Get in Touch 
+             </Link>
             </div>
           </div>
         </div>
