@@ -48,7 +48,7 @@ export function About() {
               <h3 className="text-xl font-semibold mb-2 text-center">Meghana Manjunath</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">Founder & CEO</p>
               <p className="mt-4 text-gray-600 dark:text-gray-300">
-               With over 20 years of experience in traditional cooking, Meghana Manjunath brings his family's secret recipes and passion for authentic flavors to Butter Batter.
+               With over 20 years of experience in traditional cooking, Meghana Manjunath brings her family's secret recipes and passion for authentic flavors to Butter Batter.
               </p>
             </div>
             <div className="card p-6">
