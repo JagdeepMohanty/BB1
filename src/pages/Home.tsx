@@ -21,7 +21,7 @@ export function Home() {
     },
     {
       name: 'Fresh Chutney Pack',
-      image: 'https://images.unsplash.com/photo-1626200419199-391ae4be7a41?auto=format&fit=crop&w=800',
+      image: 'https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl-archanaskitchen.com/Pudina_Dahi_Chutney_Mint_Yogurt_Chutney-1.jpg',
       description: 'Assorted fresh chutneys made daily.',
       link: '/products#chutney',
     },
@@ -29,22 +29,22 @@ export function Home() {
 
   const testimonials = [
     {
-      name: 'Priya Sharma',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200',
-      text: 'The best idli batter I\'ve ever used! My family loves the soft, fluffy idlis every morning.',
+      name: 'Marri Sireesha',
+      image: 'src/image/WhatsApp Image 2025-06-17 at 22.58.39_6d182550.jpg',
+      text: '"This batter is a game-changer! Soft, fluffy idlis and crispy dosas every time. Ferments perfectly and saves so much time. Feels just like homemade—my family loves it!”',
       rating: 5,
     },
     {
-      name: 'Rahul Verma',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200',
-      text: 'Their dosa batter makes perfect, crispy dosas every time. Highly recommended!',
+      name: 'Priyanshu Sekhar',
+      image: 'src/image/WhatsApp Image 2025-06-17 at 23.07.25_6967e6dd.jpg',
+      text: '“Absolutely love this batter! The texture and taste are spot-on. My mornings are now easier with quick, delicious breakfasts. Idlis turn out super soft, dosas crispy—highly recommend!”',
       rating: 5,
     },
     {
-      name: 'Anjali Patel',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200',
-      text: 'Fresh chutneys are amazing! Saves so much time in the morning.',
-      rating: 5,
+      name: 'Pallavi Das',
+      image: 'src/image/WhatsApp Image 2025-06-17 at 22.46.35_4d8718d5.jpg',
+      text: '“Fresh, consistent, and super convenient! This batter delivers authentic South Indian taste without the hassle. I’ve stopped making my own—it’s that good. My go-to for healthy, tasty meals!”',
+      rating: 4,
     },
   ];
 

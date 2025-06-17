@@ -108,7 +108,7 @@ export function Products() {
         name: 'Masala Dosa Batter - (750ml)',
         image: 'https://th.bing.com/th/id/OIP.XSCo5S6kP3o-7-jVqH4vGgHaE8?rs=1&pid=ImgDetMain',
         description: 'Made of Rice, Urad Dal, Flattened rice, Fenugreek seeds.',
-        price: '₹85.00',
+        price: '₹90.00',
       },
       {
         name: 'Thatte Idli Batter - (750ml)',
@@ -202,7 +202,7 @@ export function Products() {
       },
       {
         name: 'Pudina Chutney - (250ml)',
-        image: 'https://th.bing.com/th/id/OIP.G9Taf9kPpNOPeRFbIH-kdgAAAA?rs=1&pid=ImgDetMain',
+        image: 'https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl-archanaskitchen.com/Pudina_Dahi_Chutney_Mint_Yogurt_Chutney-1.jpg',
         description: 'Coconut, Fried Gram, Green Chilli, Pudina (Mint leaves), Tamarind, Salt, Jaggery.',
         price: '₹45.00',
       },
