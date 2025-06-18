@@ -30,21 +30,21 @@ export function Home() {
   const testimonials = [
     {
       name: 'Marri Sireesha',
-      image: 'src/image/WhatsApp Image 2025-06-17 at 22.58.39_6d182550.jpg',
+      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750184950/WhatsApp_Image_2025-06-17_at_23.57.23_626dd741_ry48oe.jpg',
       text: '"This batter is a game-changer! Soft, fluffy idlis and crispy dosas every time. Ferments perfectly and saves so much time. Feels just like homemade—my family loves it!”',
       rating: 5,
     },
     {
-      name: 'Priyanshu Sekhar',
-      image: 'src/image/WhatsApp Image 2025-06-17 at 23.07.25_6967e6dd.jpg',
+      name: 'Priyanshu Shekhar',
+      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750184987/WhatsApp_Image_2025-06-17_at_23.57.23_8da645ad_oeoavn.jpg',
       text: '“Absolutely love this batter! The texture and taste are spot-on. My mornings are now easier with quick, delicious breakfasts. Idlis turn out super soft, dosas crispy—highly recommend!”',
       rating: 5,
     },
     {
       name: 'Pallavi Das',
-      image: 'src/image/WhatsApp Image 2025-06-17 at 22.46.35_4d8718d5.jpg',
+      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750184903/WhatsApp_Image_2025-06-17_at_23.57.22_31db964c_o2yi4f.jpg',
       text: '“Fresh, consistent, and super convenient! This batter delivers authentic South Indian taste without the hassle. I’ve stopped making my own—it’s that good. My go-to for healthy, tasty meals!”',
-      rating: 4,
+      rating: 5,
     },
   ];
 

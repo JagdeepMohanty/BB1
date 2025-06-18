@@ -50,7 +50,7 @@ export function Contact() {
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      +91 88923 24272
+                      ‪+91 88923 24272‬
                     </p>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export function Contact() {
               </div>
             </div>
           </div>
-
+          
           {/* Contact Form */}
           <div>
             <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
@@ -185,7 +185,14 @@ export function Contact() {
             </form>
           </div>
         </div>
+        <section className="py-5">
+        <div className="container mx-auto px-4 text-center">
+          <div className="flex justify-center space-x-6">
+            <div> Batter Ventures LLP </div>
+          </div>
+        </div>
+      </section>
       </div>
-    </div>
-  );
+    </div>
+  );
 }
