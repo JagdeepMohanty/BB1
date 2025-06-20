@@ -66,7 +66,7 @@ export function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6"
-             style={{ marginTop: '0.1cm' }}
+             style={{ marginTop: '0.5cm' }}
              >
               Authentic Udupi Flavors, Straight to Your Kitchen!
             </h1>
@@ -74,7 +74,7 @@ export function Home() {
             <p className="text-xl text-gray-200 mb-8">
               Experience the taste of tradition with our fresh, hand-ground batters and authentic chutneys.
             </p>
-            <div style={{ marginTop: '8cm' }}>
+            <div style={{ marginTop: '7cm' }}>
             <div className="flex flex-wrap gap-4">
              <Link to="/products" className="btn-primary">
              Order Now
