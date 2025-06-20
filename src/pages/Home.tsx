@@ -41,8 +41,8 @@ export function Home() {
       rating: 5,
     },
     {
-      name: 'Pallavi Das',
-      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750184903/WhatsApp_Image_2025-06-17_at_23.57.22_31db964c_o2yi4f.jpg',
+      name: 'Meera ',
+      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750322385/WhatsApp_Image_2025-06-19_at_00.13.58_1da06394_tmqpnr.jpg',
       text: '“Fresh, consistent, and super convenient! This batter delivers authentic South Indian taste without the hassle. I’ve stopped making my own—it’s that good. My go-to for healthy, tasty meals!”',
       rating: 5,
     },
@@ -65,12 +65,16 @@ export function Home() {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6"
+             style={{ marginTop: '-2.5cm' }}
+             >
               Authentic Udupi Flavors, Straight to Your Kitchen!
             </h1>
+          
             <p className="text-xl text-gray-200 mb-8">
               Experience the taste of tradition with our fresh, hand-ground batters and authentic chutneys.
             </p>
+            <div style={{ marginTop: '7cm' }}>
             <div className="flex flex-wrap gap-4">
              <Link to="/products" className="btn-primary">
              Order Now
@@ -78,7 +82,7 @@ export function Home() {
             <Link to="/stores" className="btn-primary bg-white bg-opacity-20 hover:bg-opacity-30">
               Find a Store
             </Link>
-
+              </div>
             </div>
           </div>
         </div>
