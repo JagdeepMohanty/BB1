@@ -74,6 +74,7 @@ export function Contact() {
                   <div>
                     <h3 className="font-semibold mb-1">Head Office</h3>
                     <p className="text-gray-600 dark:text-gray-300">
+                      Batter Ventures LLP<br/>
                       CENTRAL KITCHEN AND MAIN BRANCH, 23, 1st Floor, Balaji Complex, Mantri Tranquil, Apartment Road, A Block, Subramanyapura,<br />
                       Bangalore - 560061
                     </p>
@@ -185,13 +186,7 @@ export function Contact() {
             </form>
           </div>
         </div>
-        <section className="py-5">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center space-x-6">
-            <div> Batter Ventures LLP </div>
-          </div>
-        </div>
-      </section>
+       
       </div>
     </div>
   );

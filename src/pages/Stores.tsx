@@ -61,15 +61,6 @@ export function Stores() {
     <div className="min-h-screen py-16">
       <div className="container mx-auto px-4">
         <h1 className="section-title text-center">Our Stores</h1>
-
-         <section className="py-5">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center space-x-6">
-            <div> Batter Ventures LLP </div>
-          </div>
-        </div>
-      </section>
-      
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {stores.map((store) => (
             <div key={store.name} className="card p-6">
