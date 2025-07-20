@@ -24,7 +24,7 @@ export function Products() {
       },
       {
         name: 'Dill Leaf (Sabsige) Batter - (750ml)',
-        image: 'https://th.bing.com/th/id/R.80d6a734d9c36e73aad333308b799e6c?rik=djpqe9vtdrud2A&riu=http%3a%2f%2fwww.archanaskitchen.com%2fimages%2farchanaskitchen%2f1-Author%2fgauravi%2fSabsige_soppina_Idli_Dill_leaves_Idli.jpg&ehk=0wnCqIJ04cXYq%2fd9wz0TQWXnzbDaFxhY1%2bEIzrWeyeE%3d&risl=&pid=ImgRaw&r=0',
+        image: 'https://i.pinimg.com/736x/ab/7c/24/ab7c241f17e904ecece20e4027ce1019.jpg',
         description: 'Idli batter blended with Dill Leaf gives an extinct aroma. It is Popularly known as Sabsige soppu Idli',
         price: '₹85.00',
       },
