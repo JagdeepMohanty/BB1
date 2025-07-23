@@ -93,7 +93,7 @@ export function Contact() {
                   Facebook
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/butterbatter_go"
                   className="text-gray-600 dark:text-gray-300 hover:text-primary"
                 >
                   Instagram
