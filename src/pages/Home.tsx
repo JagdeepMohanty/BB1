@@ -23,7 +23,7 @@ export function Home() {
     {
       name: 'Fresh Chutney Pack',
       image:
-        'https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl-archanaskitchen.com/Pudina_Dahi_Chutney_Mint_Yogurt_Chutney-1.jpg',
+        'https://res.cloudinary.com/dybzmpwaq/image/upload/v1753604672/pudina_kbg0ul.jpg',
       description: 'Assorted fresh chutneys made daily.',
       link: '/products#chutney',
     },
