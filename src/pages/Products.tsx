@@ -79,7 +79,7 @@ export function Products() {
         price: '800ml-₹90.00 , 450ml-₹55.00 ',
       },
       {
-        name: 'Chilli Cheese Dosa Batter',
+        name: 'Chilli Cheese Dosa Batter',  
         image: 'https://i.pinimg.com/originals/00/07/8c/00078c3a5782b1367a6cdfcc03f710a9.jpg',
         description: "Butter Batter's signature Dosa batter with richness of high-quality cheese and chilli.",
         price: '800ml-₹100.00 , 450ml-₹60.00 ',
@@ -217,7 +217,7 @@ export function Products() {
       {
         name: 'Tomato chutney - (200 gms ) ',
         image: 'https://keytomylime.com/wp-content/uploads/2023/11/Best-Tomato-Gravy-Recipe-720x720.jpg',
-        description: 'Tomato, Onion, Cashew, Fresh Cream, Sugar,Garlic, Ginger, Garam Masala, Spices, Salt,Red chilli,oil ,sugar',
+        description: 'Tomato, Onion, Cashew, Fresh Cream, Sunflower,Oil,Garlic, Ginger,Salt , Red Chilli , Garam Masala, Spices,sugar',
         price: '₹125.00',
       },
 
@@ -232,8 +232,8 @@ export function Products() {
       {
         name: 'Family Packs ',
         image: 'https://t3.ftcdn.net/jpg/03/72/05/60/360_F_372056014_cxUkbsQuBLNXAyKIGeHva8SxuGp2Cpmf.jpg',
-        description: 'Only upon bring ing own conta iners , Standard Idli/Dosa Batter',
-        price: '1000 ml - ₹ 95.00 , 1500 ml - ₹ 135.00 , 2000 ml - ₹ 175.00',
+        description: 'Only upon bringing own containers , Standard Idli/Dosa Batter',
+        price: '1000ml-₹95.00 , 1500ml-₹135.00 , 2000 ml-₹175.00',
       },
     ]
     // combo: [
@@ -331,13 +331,46 @@ export function Products() {
           </div>
         </section>
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-2">Save For Money</h2>
+          <h2 className="text-2xl font-bold mb-2">Save For More</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.saveforme.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}
           </div>
         </section>
+
+        {/* Preparation Table at the Bottom */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-bold mb-4 text-orange-700">Preparation Estimates</h2>
+        <div className="overflow-x-auto border border-orange-400 rounded-lg shadow-sm">
+          <table className="min-w-full text-center text-sm">
+            <thead className="bg-orange-600 text-white">
+              <tr>
+                <th className="px-3 py-2">Preparation</th>
+                <th className="px-3 py-2">800 ml</th>
+                <th className="px-3 py-2">450 ml</th>
+              </tr>
+            </thead>
+            <tbody className="bg-orange-50 text-gray-800">
+              <tr className="border-t border-orange-300">
+                <td className="px-3 py-2 font-semibold">No. of Dosa's</td>
+                <td className="px-3 py-2">13 - 15</td>
+                <td className="px-3 py-2">7 - 9</td>
+              </tr>
+              <tr className="border-t border-orange-300">
+                <td className="px-3 py-2 font-semibold">No. of Idli's</td>
+                <td className="px-3 py-2">18 - 20</td>
+                <td className="px-3 py-2">9 - 12</td>
+              </tr>
+              <tr className="border-t border-orange-300">
+                <td className="px-3 py-2 font-semibold">No. of Paddu's</td>
+                <td className="px-3 py-2">25 - 27</td>
+                <td className="px-3 py-2">17 - 20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
         {/* Combo */}
        {/* <section>

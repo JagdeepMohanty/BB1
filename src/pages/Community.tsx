@@ -42,26 +42,31 @@ export function Community() {
         </section>
 
         {/* How to Get Involved */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6">How You Can Help</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="card p-6">
-              <h3 className="text-xl font-semibold mb-4">Donate</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Support our initiatives by making a donation. Every contribution helps us 
-                reach more people in need.
-              </p>
-              <button className="btn-primary">Make a Donation</button>
-            </div>
-            <div className="card p-6">
-              <h3 className="text-xl font-semibold mb-4">Volunteer</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Join our volunteer program and help us make a difference in the community.
-              </p>
-              <button className="btn-primary">Join as Volunteer</button>
-            </div>
-          </div>
-        </section>
+<section className="mb-16">
+  <h2 className="text-2xl font-bold mb-6">How You Can Help</h2>
+  <div className="grid md:grid-cols-2 gap-8">
+    <div className="card p-6 flex flex-col justify-between">
+      <div>
+        <h3 className="text-xl font-semibold mb-4">Donate</h3>
+        <p className="text-gray-600 dark:text-gray-300 mb-4">
+          Support our initiatives by making a donation. Every contribution helps us 
+          reach more people in need.
+        </p>
+      </div>
+      <button className="btn-primary mt-auto w-fit self-start">Make a Donation</button>
+    </div>
+    <div className="card p-6 flex flex-col justify-between">
+      <div>
+        <h3 className="text-xl font-semibold mb-4">Volunteer</h3>
+        <p className="text-gray-600 dark:text-gray-300 mb-4">
+          Join our volunteer program and help us make a difference in the community.
+        </p>
+      </div>
+      <button className="btn-primary mt-auto w-fit self-start">Join as Volunteer</button>
+    </div>
+  </div>
+</section>
+
 
         {/* Contact for Support */}
         <section>
