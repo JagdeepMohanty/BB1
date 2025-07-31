@@ -232,7 +232,7 @@ export function Products() {
       {
         name: 'Family Packs ',
         image: 'https://t3.ftcdn.net/jpg/03/72/05/60/360_F_372056014_cxUkbsQuBLNXAyKIGeHva8SxuGp2Cpmf.jpg',
-        description: 'Only upon bringing own containers , Standard Idli/Dosa Batter',
+        description: 'Only upon bringing own containers . Standard Idli/Dosa Batter',
         price: '1000ml-₹95.00 , 1500ml-₹135.00 , 2000 ml-₹175.00',
       },
     ]
@@ -339,38 +339,42 @@ export function Products() {
           </div>
         </section>
 
-        {/* Preparation Table at the Bottom */}
-      <div className="mt-12">
-        <h2 className="text-2xl font-bold mb-4 text-orange-700">Preparation Estimates</h2>
-        <div className="overflow-x-auto border border-orange-400 rounded-lg shadow-sm">
-          <table className="min-w-full text-center text-sm">
-            <thead className="bg-orange-600 text-white">
-              <tr>
-                <th className="px-3 py-2">Preparation</th>
-                <th className="px-3 py-2">800 ml</th>
-                <th className="px-3 py-2">450 ml</th>
-              </tr>
-            </thead>
-            <tbody className="bg-orange-50 text-gray-800">
-              <tr className="border-t border-orange-300">
-                <td className="px-3 py-2 font-semibold">No. of Dosa's</td>
-                <td className="px-3 py-2">13 - 15</td>
-                <td className="px-3 py-2">7 - 9</td>
-              </tr>
-              <tr className="border-t border-orange-300">
-                <td className="px-3 py-2 font-semibold">No. of Idli's</td>
-                <td className="px-3 py-2">18 - 20</td>
-                <td className="px-3 py-2">9 - 12</td>
-              </tr>
-              <tr className="border-t border-orange-300">
-                <td className="px-3 py-2 font-semibold">No. of Paddu's</td>
-                <td className="px-3 py-2">25 - 27</td>
-                <td className="px-3 py-2">17 - 20</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+{/* Preparation Table - 50% Width & 75% Static Height */}
+<div className="font-['Poppins'] w-1/2 h-[25vh] mx-auto mt-4 flex flex-col justify-start">
+  <h2 className="text-lg font-semibold text-orange-700 text-center mb-4">
+    Preparation Estimates
+  </h2>
+  <div className="border border-orange-300 rounded-lg shadow-md h-full">
+    <table className="w-full h-full text-center text-sm">
+      <thead className="bg-orange-600 text-white">
+        <tr>
+          <th className="px-2 py-3">Preparation</th>
+          <th className="px-2 py-3">800 ml</th>
+          <th className="px-2 py-3">450 ml</th>
+        </tr>
+      </thead>
+      <tbody className="bg-orange-50 text-gray-800">
+        <tr className="border-t border-orange-200">
+          <td className="px-2 py-8 font-medium">No. of Dosa's</td>
+          <td className="px-2 py-8">13 - 15</td>
+          <td className="px-2 py-8">7 - 9</td>
+        </tr>
+        <tr className="border-t border-orange-200">
+          <td className="px-2 py-8 font-medium">No. of Idli's</td>
+          <td className="px-2 py-8">18 - 20</td>
+          <td className="px-2 py-8">9 - 12</td>
+        </tr>
+        <tr className="border-t border-orange-200">
+          <td className="px-2 py-8 font-medium">No. of Paddu's</td>
+          <td className="px-2 py-8">25 - 27</td>
+          <td className="px-2 py-8">17 - 20</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
 
         {/* Combo */}
        {/* <section>
