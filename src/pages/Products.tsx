@@ -215,7 +215,7 @@ export function Products() {
     ],
     gravy: [
       {
-        name: 'Tomato chutney - (200 gms ) ',
+        name: 'Ready to cook Curry Paste  - (200 gms ) ',
         image: 'https://keytomylime.com/wp-content/uploads/2023/11/Best-Tomato-Gravy-Recipe-720x720.jpg',
         description: 'Tomato, Onion, Cashew, Fresh Cream, Sunflower,Oil,Garlic, Ginger,Salt , Red Chilli , Garam Masala, Spices,sugar',
         price: '₹125.00',
@@ -339,40 +339,42 @@ export function Products() {
           </div>
         </section>
 
-{/* Preparation Table - 50% Width & 75% Static Height */}
-<div className="font-['Poppins'] w-1/2 h-[25vh] mx-auto mt-4 flex flex-col justify-start">
-  <h2 className="text-lg font-semibold text-orange-700 text-center mb-4">
+{/* Preparation Table - 50% Width and 50% Screen Height */}
+<div className="w-1/2 h-[50vh] mx-auto mt-6 font-['Poppins'] flex flex-col justify-start">
+  <h2 className="text-base sm:text-lg font-semibold mb-2 text-orange-700 text-center">
     Preparation Estimates
   </h2>
-  <div className="border border-orange-300 rounded-lg shadow-md h-full">
-    <table className="w-full h-full text-center text-sm">
+  <div className="border border-orange-300 rounded-md shadow-sm">
+    <table className="w-full text-center text-xs leading-tight">
       <thead className="bg-orange-600 text-white">
         <tr>
-          <th className="px-2 py-3">Preparation</th>
-          <th className="px-2 py-3">800 ml</th>
-          <th className="px-2 py-3">450 ml</th>
+          <th className="px-2 py-1">Preparation</th>
+          <th className="px-2 py-1">800 ml</th>
+          <th className="px-2 py-1">450 ml</th>
         </tr>
       </thead>
       <tbody className="bg-orange-50 text-gray-800">
-        <tr className="border-t border-orange-200">
-          <td className="px-2 py-8 font-medium">No. of Dosa's</td>
-          <td className="px-2 py-8">13 - 15</td>
-          <td className="px-2 py-8">7 - 9</td>
+        <tr className="border-t border-orange-200 hover:bg-orange-100">
+          <td className="px-2 py-1 font-medium">No. of Dosa's</td>
+          <td className="px-2 py-1">13 - 15</td>
+          <td className="px-2 py-1">7 - 9</td>
         </tr>
-        <tr className="border-t border-orange-200">
-          <td className="px-2 py-8 font-medium">No. of Idli's</td>
-          <td className="px-2 py-8">18 - 20</td>
-          <td className="px-2 py-8">9 - 12</td>
+        <tr className="border-t border-orange-200 hover:bg-orange-100">
+          <td className="px-2 py-1 font-medium">No. of Idli's</td>
+          <td className="px-2 py-1">18 - 20</td>
+          <td className="px-2 py-1">9 - 12</td>
         </tr>
-        <tr className="border-t border-orange-200">
-          <td className="px-2 py-8 font-medium">No. of Paddu's</td>
-          <td className="px-2 py-8">25 - 27</td>
-          <td className="px-2 py-8">17 - 20</td>
+        <tr className="border-t border-orange-200 hover:bg-orange-100">
+          <td className="px-2 py-1 font-medium">No. of Paddu's</td>
+          <td className="px-2 py-1">25 - 27</td>
+          <td className="px-2 py-1">17 - 20</td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
+
+
 
 
 
