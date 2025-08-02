@@ -88,7 +88,13 @@ export function Products() {
         name: 'Yummy Chocolate Dosa Batter',
         image: 'https://i.pinimg.com/736x/5e/4a/2d/5e4a2db552f2bd4f814d4ace1e78e3c0.jpg',
         description: 'Chocolate infused Dosa batter is a sweet & salt batter. Goes well with chocolate sauce/Jam.',
-        price: '₹800ml-₹100.00 , 450ml-₹60.00 ',
+        price: '800ml-₹100.00 , 450ml-₹60.00 ',
+      },
+      {
+        name: 'Mexican Spicy Dosa Batter',
+        image: 'https://b.zmtcdn.com/data/dish_photos/c99/c7fcce01147d144ca4640b9ab1dcac99.jpg',
+        description: 'Upadi Dosa batter infused with Red chilly paste , garlic , salt ',
+        price: '800ml-₹125.00 , 450ml-₹85.00 ',
       },
     ],
     weekendSpecialty: [
@@ -339,40 +345,40 @@ export function Products() {
           </div>
         </section>
 
-{/* Preparation Table - 50% Width and 50% Screen Height */}
-<div className="w-1/2 h-[50vh] mx-auto mt-6 font-['Poppins'] flex flex-col justify-start">
-  <h2 className="text-base sm:text-lg font-semibold mb-2 text-orange-700 text-center">
+<div className="w-[35%] mx-auto mt-2 font-['Poppins'] flex flex-col justify-start">
+  <h2 className="text-sm font-semibold mb-2 text-orange-700 text-center">
     Preparation Estimates
   </h2>
-  <div className="border border-orange-300 rounded-md shadow-sm">
-    <table className="w-full text-center text-xs leading-tight">
+  <div className="border border-orange-300 rounded-md shadow-sm overflow-x-auto">
+    <table className="w-full text-center text-[11px] border-collapse">
       <thead className="bg-orange-600 text-white">
         <tr>
-          <th className="px-2 py-1">Preparation</th>
-          <th className="px-2 py-1">800 ml</th>
-          <th className="px-2 py-1">450 ml</th>
+          <th className="w-[38%] py-[3px] border border-orange-300">Preparation</th>
+          <th className="w-[31%] py-[3px] border border-orange-300">800 ml</th>
+          <th className="w-[31%] py-[3px] border border-orange-300">450 ml</th>
         </tr>
       </thead>
       <tbody className="bg-orange-50 text-gray-800">
-        <tr className="border-t border-orange-200 hover:bg-orange-100">
-          <td className="px-2 py-1 font-medium">No. of Dosa's</td>
-          <td className="px-2 py-1">13 - 15</td>
-          <td className="px-2 py-1">7 - 9</td>
+        <tr className="hover:bg-orange-100">
+          <td className="py-[3px] font-medium border border-orange-200">No. of Dosa's</td>
+          <td className="py-[3px] border border-orange-200">13–15</td>
+          <td className="py-[3px] border border-orange-200">7–9</td>
         </tr>
-        <tr className="border-t border-orange-200 hover:bg-orange-100">
-          <td className="px-2 py-1 font-medium">No. of Idli's</td>
-          <td className="px-2 py-1">18 - 20</td>
-          <td className="px-2 py-1">9 - 12</td>
+        <tr className="hover:bg-orange-100">
+          <td className="py-[3px] font-medium border border-orange-200">No. of Idli's</td>
+          <td className="py-[3px] border border-orange-200">18–20</td>
+          <td className="py-[3px] border border-orange-200">9–12</td>
         </tr>
-        <tr className="border-t border-orange-200 hover:bg-orange-100">
-          <td className="px-2 py-1 font-medium">No. of Paddu's</td>
-          <td className="px-2 py-1">25 - 27</td>
-          <td className="px-2 py-1">17 - 20</td>
+        <tr className="hover:bg-orange-100">
+          <td className="py-[3px] font-medium border border-orange-200">No. of Paddu's</td>
+          <td className="py-[3px] border border-orange-200">25–27</td>
+          <td className="py-[3px] border border-orange-200">17–20</td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
+
 
 
 
