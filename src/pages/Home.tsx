@@ -109,7 +109,7 @@ export function Home() {
       </p>
       <div className="aspect-video">
         <video
-          src={introVideo}
+          src="https://res.cloudinary.com/dybzmpwaq/video/upload/v1755419254/intro_mioe59.mp4"
           autoPlay
           muted
           loop
