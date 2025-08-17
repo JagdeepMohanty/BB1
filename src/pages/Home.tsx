@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, ShoppingBag, MapPin, Phone } from 'lucide-react';
 import { TestimonialCard } from '../components/TestimonialCard';
 import { ProductCard } from '../components/ProductCard';
-import introVideo from '../assets/videos/intro.mp4';
+import introVideo from './assets/videos/intro.mp4';
 
 export function Home() {
   const popularProducts = [
