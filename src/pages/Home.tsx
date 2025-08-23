@@ -103,33 +103,34 @@ export function Home() {
     <h2 className="section-title text-center mb-12">Our Story in Motion</h2>
     
     {/* Local Autoplay Video (plays only when visible) */}
-<div className="mb-12 max-w-2xl mx-auto">
-  <h3 className="text-xl font-semibold mb-2 text-center">Autoplay Video</h3>
-  <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
-    This video introduces our brand and vision — enjoy a quick glimpse of our journey.
-  </p>
-  <div className="aspect-video">
-    <AutoPlayVideo src="https://res.cloudinary.com/dybzmpwaq/video/upload/v1755419254/intro_mioe59.mp4" />
-  </div>
-</div>
-
+    <div className="mb-12 max-w-2xl mx-auto">
+      <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
+        This video introduces our brand and vision — enjoy a quick glimpse of our journey.
+      </p>
+      <div>
+        <AutoPlayVideo 
+          src="https://res.cloudinary.com/dybzmpwaq/video/upload/v1755419254/intro_mioe59.mp4" 
+          className="w-full rounded-lg shadow-md object-cover"
+        />
+      </div>
+    </div>
 
     {/* Cloudinary Optional Play Video */}
     <div className="max-w-2xl mx-auto">
-      <h3 className="text-xl font-semibold mb-2 text-center">Watch On Demand</h3>
       <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
         Here’s a detailed look at our products, process, and what makes us unique.
       </p>
-      <div className="aspect-video">
+      <div>
         <video
           src="https://res.cloudinary.com/dybzmpwaq/video/upload/v1755408285/product_opm0zl.mp4"
           controls
-          className="w-full h-full rounded-lg shadow-md object-cover"
+          className="w-full rounded-lg shadow-md object-cover"
         />
       </div>
     </div>
   </div>
 </section>
+
 
 
 
