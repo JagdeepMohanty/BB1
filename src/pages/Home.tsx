@@ -116,15 +116,15 @@ export function Home() {
     </div>
 
     {/* Cloudinary Optional Play Video */}
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-xl mx-auto"> {/* smaller width than first video */}
       <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
         Here’s a detailed look at our products, process, and what makes us unique.
       </p>
-      <div>
+      <div> {/* keeps a nice 16:9 ratio */}
         <video
-          src="https://res.cloudinary.com/dybzmpwaq/video/upload/v1755408285/product_opm0zl.mp4"
+          src="https://res.cloudinary.com/dl6vgntp7/video/upload/v1756788570/product_1_ov7pi9.mp4"
           controls
-          className="w-full rounded-lg shadow-md object-cover"
+          className="w-full h-full rounded-lg shadow-md object-cover"
         />
       </div>
     </div>

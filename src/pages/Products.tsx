@@ -128,6 +128,12 @@ export function Products() {
         description: 'Made from Channa dal, Sago, Green gram, Urad dal, rice (<20%).',
         price: '800ml-₹125.00 , 450ml-₹85.00',
       },
+       {
+        name: 'Pesarattu Dosa Batter',
+        image: 'https://cookilicious.com/wp-content/uploads/2025/02/Pesarattu-Dosa-1-scaled.jpg',
+        description: 'Made from Moong dal, Rice, Green chilli,Ginger & Cumin seeds.',
+        price: '800ml-₹125.00 , 450ml-₹85.00',
+      },
     ],
     paddu: [
       {
