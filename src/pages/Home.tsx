@@ -107,10 +107,10 @@ export function Home() {
       <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
         This video introduces our brand and vision — enjoy a quick glimpse of our journey.
       </p>
-      <div>
+      <div className='w-96 ml-[130px]'>
         <AutoPlayVideo 
           src="https://res.cloudinary.com/dybzmpwaq/video/upload/v1755419254/intro_mioe59.mp4" 
-          className="w-full rounded-lg shadow-md object-cover"
+          className=""
         />
       </div>
     </div>
