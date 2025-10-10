@@ -62,7 +62,7 @@ export function Products() {
       },
       {
         name: 'Palak Magic Dosa Batter',
-        image: 'https://static.vecteezy.com/system/resources/previews/016/283/228/non_2x/palak-dosa-made-using-mixing-spinach-or-keerai-in-batter-served-with-red-chutney-free-photo.jpg',
+        image: 'https://img-global.cpcdn.com/recipes/d636b7f34f16d9c3/680x781cq80/moongdal-palak-dosa-recipe-main-photo.jpg',
         description: 'Spinach Dosa batter is made from fresh spinach blended with Dosa batter. It has a bit of Garlic in it.',
         price: '800ml-₹90.00 , 450ml-₹55.00 ',
       },
@@ -98,7 +98,7 @@ export function Products() {
       },
       {
         name: 'Onion Dosa Batter',
-        image: 'https://b.zmtcdn.com/data/dish_photos/c99/c7fcce01147d144ca4640b9ab1dcac99.jpg',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWUmwLOJZLQDT2OPah4CFDgZnb4_EVyB4uEg&s',
         description: 'A perfect blend of Rice, Fenugreek, Urad Dal fermented to perfection and Onion, herbs are added into it. ',
         price: '800ml-₹90.00 , 450ml-₹55.00 ',
       },
