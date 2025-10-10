@@ -7,7 +7,7 @@ export function Products() {
       {
         name: 'Udupi Standard Idli Batter ',
         image: 'https://th.bing.com/th/id/OIP.lRuB9j-n52QrRzg9cp5kDAHaHF?rs=1&pid=ImgDetMain',
-        description: 'Made from Fine blend of Rice, Sooji (Samolina) and urad dal.',
+        description: 'Fine blend of Bombay S ooji (S a molina ) & Urad dal, Poha, perfectly fermented',
         price: '800ml-₹80.00 , 450ml-₹50.00 ',
       },
       {
@@ -33,7 +33,7 @@ export function Products() {
       {
         name: 'Udupi Standard Dosa Batter',
         image: 'https://th.bing.com/th/id/OIP.JOlO2To7LKAoeIWLVQW5xAHaD2?rs=1&pid=ImgDetMain',
-        description: 'A perfect blend of Rice, Urad Dal, Fenugreek, and more fermented to perfection.',
+        description: 'A perfect blend of Rice, Fenugreek, Urad Dal, Puffed rice, Salt & Sugar fermented to perfection.',
         price: '800ml-₹80.00 , 450ml-₹50.00 ',
       },
       {
@@ -69,7 +69,7 @@ export function Products() {
       {
         name: 'Set Dosa Batter',
         image: 'https://i.ytimg.com/vi/UboF2QmswPM/maxresdefault.jpg',
-        description: 'This is made of Rice, Urad Dal, Flattened rice, Sabudana (Sago), etc. This is named Set Dosa as it is served in a set of 3 Dosas in restaurants.',
+        description: 'This is made of Rice, Urad dal, Methi,Flattened Rice, Sabudana (Sago), etc.This is named Set Dosa as it is served in a set of 3 Dosa’s in restaurants.',
         price: '800ml-₹90.00 , 450ml-₹55.00 ',
       },
       {
@@ -96,42 +96,48 @@ export function Products() {
         description: 'Upadi Dosa batter infused with Red chilly paste , garlic , salt ',
         price: '800ml-₹125.00 , 450ml-₹85.00 ',
       },
+      {
+        name: 'Onion Dosa Batter',
+        image: 'https://b.zmtcdn.com/data/dish_photos/c99/c7fcce01147d144ca4640b9ab1dcac99.jpg',
+        description: 'A perfect blend of Rice, Fenugreek, Urad Dal fermented to perfection and Onion, herbs are added into it. ',
+        price: '800ml-₹90.00 , 450ml-₹55.00 ',
+      },
     ],
     weekendSpecialty: [
       {
         name: 'Neer Dosa Batter',
         image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2017/10/neer-dosa-recipe.jpg',
-        description: 'Authentic Udupi style Dosa batter. This thin watery batter made of rice.',
+        description: 'Authentic Udupi style Dosa batter. This thin watery batter made of rice & jeera. ',
         price: '800ml-₹90.00 , 450ml-₹55.00 ',
       },
       {
         name: 'Rava Dosa Batter ',
         image: 'https://th.bing.com/th/id/OIP.K3SeQzlTBTAqc-Wyo1aZLQAAAA?rs=1&pid=ImgDetMain',
-        description: 'Authentic Udupi style Rava Dosa batter is a thin crispy fried crepe made with Semolina, Rice flour, and chosen spices. Best tasted with Butter Batter chutney.',
+        description: 'Rava Dosa batter is a thin crispy fried crepe made with Semolina, Rice flour ,Green Chilly, Ginger, Curry &Coriander leaves.',
         price: '800ml-₹90.00 , 450ml-₹55.00',
       },
       {
         name: 'Masala Dosa Batter',
         image: 'https://th.bing.com/th/id/OIP.XSCo5S6kP3o-7-jVqH4vGgHaE8?rs=1&pid=ImgDetMain',
-        description: 'Made of Rice, Urad Dal, Flattened rice, Fenugreek seeds.',
+        description: 'Made of Red rice, Flattened Rice, Urad Dal, Fenugreek seeds.',
         price: '800ml-₹90.00 , 450ml-₹55.00 ',
       },
       {
         name: 'Thatte Idli Batter',
         image: 'https://th.bing.com/th/id/OIP.x4uTdLXhkQvVemkZbCwU-AHaFj?rs=1&pid=ImgDetMain',
-        description: 'Made of Rice, Urad dal, Beaten rice, Salt, which is perfectly fermented.',
+        description: 'Made of Rice, Urad Dal, Beaten Rice and salt.',
         price: '800ml-₹90.00 , 450ml-₹55.00 ',
       },
       {
         name: 'Multigrain Dosa Batter',
         image: 'https://th.bing.com/th/id/OIP.n6_JdnkNbL0eFRMLDNEmhgHaE8?rs=1&pid=ImgDetMain',
-        description: 'Made from Channa dal, Sago, Green gram, Urad dal, rice (<20%).',
+        description: 'Made from Chana Dal, Sago, Green gram, Dal, Rice (< 20%).',
         price: '800ml-₹125.00 , 450ml-₹85.00',
       },
        {
         name: 'Pesarattu Dosa Batter',
         image: 'https://cookilicious.com/wp-content/uploads/2025/02/Pesarattu-Dosa-1-scaled.jpg',
-        description: 'Made from Moong dal, Rice, Green chilli,Ginger & Cumin seeds.',
+        description: 'Made from Green moong dal, Rice,Green chilli, Ginger & Cumin seeds',
         price: '800ml-₹125.00 , 450ml-₹85.00',
       },
     ],
