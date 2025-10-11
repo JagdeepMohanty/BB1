@@ -2,8 +2,8 @@ import React from 'react';
 import { ArrowRight, ShoppingBag, MapPin, Phone } from 'lucide-react';
 import { TestimonialCard } from '../components/TestimonialCard';
 import { ProductCard } from '../components/ProductCard';
-import  AutoPlayVideo  from "../components/AutoPlayVideo";
-
+import AutoPlayVideo from "../components/AutoPlayVideo";
+import { Link } from 'react-router-dom'; // 1. Import Link
 
 export function Home() {
   const popularProducts = [
@@ -29,20 +29,20 @@ export function Home() {
 
   const testimonials = [
     {
-      name: 'Priya Sharma',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200',
+      name: 'Meera ',
+      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750322385/WhatsApp_Image_2025-06-19_at_00.13.58_1da06394_tmqpnr.jpg ',
       text: "The best idli batter I've ever used! My family loves the soft, fluffy idlis every morning.",
       rating: 5,
     },
     {
-      name: 'Rahul Verma',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200',
+      name: 'Priyanshu Sekhar ',
+      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750184987/WhatsApp_Image_2025-06-17_at_23.57.23_8da645ad_oeoavn.jpg',
       text: 'Their dosa batter makes perfect, crispy dosas every time. Highly recommended!',
       rating: 5,
     },
     {
-      name: 'Anjali Patel',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200',
+      name: 'M Sireesha ',
+      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750184950/WhatsApp_Image_2025-06-17_at_23.57.23_626dd741_ry48oe.jpg',
       text: 'Fresh chutneys are amazing! Saves so much time in the morning.',
       rating: 5,
     },
@@ -73,12 +73,14 @@ export function Home() {
               Experience the taste of tradition with our fresh, hand-ground batters and authentic chutneys.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="/products" className="btn-primary">
+              {/* 2. Changed <a> to <Link> and href to to */}
+              <Link to="/products" className="btn-primary">
                 Order Now
-              </a>
-              <a href="/stores" className="btn-primary bg-white bg-opacity-20 hover:bg-opacity-30">
+              </Link>
+              {/* This link goes to a different page, so it's also updated */}
+              <Link to="/stores" className="btn-primary bg-white bg-opacity-20 hover:bg-opacity-30">
                 Find a Store
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -97,43 +99,37 @@ export function Home() {
         </div>
       </section>
 
-{/* 🎥 Video Section */}
-<section className="py-16 bg-gray-50 dark:bg-gray-900">
-  <div className="container mx-auto px-4">
-    <h2 className="section-title text-center mb-12">Our Story in Motion</h2>
-    
-    {/* Local Autoplay Video (plays only when visible) */}
-    <div className="mb-12 max-w-2xl mx-auto">
-      <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
-        This video introduces our brand and vision — enjoy a quick glimpse of our journey.
-      </p>
-      <div className='w-96 ml-[130px]'>
-        <AutoPlayVideo 
-          src="https://res.cloudinary.com/dybzmpwaq/video/upload/v1755419254/intro_mioe59.mp4" 
-          className=""
-        />
-      </div>
-    </div>
+      {/* 🎥 Video Section */}
+      <section className="py-16 bg-gray-50 dark:bg-gray-900">
+        <div className="container mx-auto px-4">
+          <h2 className="section-title text-center mb-12">Our Story in Motion</h2>
+          
+          <div className="mb-12 max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
+              This video introduces our brand and vision — enjoy a quick glimpse of our journey.
+            </p>
+            <div className='w-96 ml-[130px]'>
+              <AutoPlayVideo 
+                src="https://res.cloudinary.com/dybzmpwaq/video/upload/v1755419254/intro_mioe59.mp4" 
+                className=""
+              />
+            </div>
+          </div>
 
-    {/* Cloudinary Optional Play Video */}
-    <div className="max-w-xl mx-auto"> {/* smaller width than first video */}
-      <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
-        Here’s a detailed look at our products, process, and what makes us unique.
-      </p>
-      <div> {/* keeps a nice 16:9 ratio */}
-        <video
-          src="https://res.cloudinary.com/dl6vgntp7/video/upload/v1756788570/product_1_ov7pi9.mp4"
-          controls
-          className="w-full h-full rounded-lg shadow-md object-cover"
-        />
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
+          <div className="max-w-xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
+              Here’s a detailed look at our products, process, and what makes us unique.
+            </p>
+            <div>
+              <video
+                src="https://res.cloudinary.com/dl6vgntp7/video/upload/v1756788570/product_1_ov7pi9.mp4"
+                controls
+                className="w-full h-full rounded-lg shadow-md object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Popular Products */}
       <section className="py-16 bg-gray-50 dark:bg-gray-900">
@@ -157,9 +153,10 @@ export function Home() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Fresh batters delivered to your doorstep
               </p>
-              <a href="/how-to-order" className="btn-primary">
+              {/* 3. Changed <a> to <Link> and corrected the path */}
+              <Link to="/products" className="btn-primary">
                 Order Now
-              </a>
+              </Link>
             </div>
             <div className="card p-6 text-center">
               <MapPin className="w-12 h-12 mx-auto mb-4 text-primary" />
@@ -167,9 +164,9 @@ export function Home() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Find your nearest Butter Batter outlet
               </p>
-              <a href="/stores" className="btn-primary">
+              <Link to="/stores" className="btn-primary">
                 Find Store
-              </a>
+              </Link>
             </div>
             <div className="card p-6 text-center">
               <Phone className="w-12 h-12 mx-auto mb-4 text-primary" />
@@ -177,9 +174,9 @@ export function Home() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Questions? We're here to help
               </p>
-              <a href="/contact" className="btn-primary">
+              <Link to="/contact" className="btn-primary">
                 Get in Touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -202,9 +199,12 @@ export function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="section-title mb-8">Connect With Us</h2>
           <div className="flex justify-center space-x-6">
+            {/* External links should still use <a> tags */}
             <a
               href="https://www.facebook.com/Butterbattergo"
               className="text-gray-600 dark:text-gray-300 hover:text-primary"
+              target="_blank" // Good practice to open external links in a new tab
+              rel="noopener noreferrer"
             >
               Facebook
             </a>
