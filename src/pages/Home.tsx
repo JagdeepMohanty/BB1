@@ -108,11 +108,13 @@ export function Home() {
             <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
               This video introduces our brand and vision — enjoy a quick glimpse of our journey.
             </p>
-            <div className='w-96 ml-[130px]'>
-              <AutoPlayVideo 
-                src="https://res.cloudinary.com/dybzmpwaq/video/upload/v1755419254/intro_mioe59.mp4" 
-                className=""
-              />
+            <div className="flex justify-center">
+              <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl">
+                <AutoPlayVideo
+                  src="https://res.cloudinary.com/dybzmpwaq/video/upload/v1755419254/intro_mioe59.mp4"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </div>
 
@@ -208,7 +210,7 @@ export function Home() {
             >
               Facebook
             </a>
-            <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary">
+            <a href="https://www.instagram.com/butterbatter_go" className="text-gray-600 dark:text-gray-300 hover:text-primary">
               Instagram
             </a>
           </div>

@@ -7,7 +7,7 @@ export function Products() {
       {
         name: 'Udupi Standard Idli Batter ',
         image: 'https://th.bing.com/th/id/OIP.lRuB9j-n52QrRzg9cp5kDAHaHF?rs=1&pid=ImgDetMain',
-        description: 'Fine blend of Bombay S ooji (S a molina ) & Urad dal, Poha, perfectly fermented',
+        description: 'Fine blend of Bombay Sooji (Samolina) & Urad dal, Poha, perfectly fermented',
         price: '800ml-₹80.00 , 450ml-₹50.00 ',
       },
       {
