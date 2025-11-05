@@ -29,21 +29,21 @@ export function Home() {
 
   const testimonials = [
     {
-      name: 'Meera ',
-      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750322385/WhatsApp_Image_2025-06-19_at_00.13.58_1da06394_tmqpnr.jpg ',
-      text: "The best idli batter I've ever used! My family loves the soft, fluffy idlis every morning.",
+      name: 'Anupama Chandraakanth',
+      image: 'https://res.cloudinary.com/diaafwq2f/image/upload/v1762159939/user-avatar-male-6_brxm5c.png ',
+      text: "The new Thatte idli batter is too good and gives a tough competition to the hotel brought trending thatte idli.A super spicy chutney is a great combination and provides satisfaction of home made food.A must try.",
       rating: 5,
     },
     {
-      name: 'Priyanshu Sekhar ',
-      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750184987/WhatsApp_Image_2025-06-17_at_23.57.23_8da645ad_oeoavn.jpg',
-      text: 'Their dosa batter makes perfect, crispy dosas every time. Highly recommended!',
+      name: 'Anuritha Raghavendra',
+      image: 'https://res.cloudinary.com/diaafwq2f/image/upload/v1762159812/user-avatar-male-5_igmtni.png',
+      text: 'I recently tried Butter Batter dosa batter, combo (Chilly cheese, Palak dosa, and Millet dosa) and I am thoroughly impressed! I was searching for a quick and easy way to make dosas at home, and Butter Batter exceeded my expectations. The batter has the perfect consistency, making it simple to spread evenly on the pan. It ferments well, producing crispy dosas with a fluffy inside every time.What stood out to me was the convenience. No more soaking, grinding, and waiting for hours. I can now make delicious dosas in minutes, which is perfect for my busy mornings.I highly recommend (Butter Batter) dosa batter to anyone looking for an authentic, easy-to-use, and delicious dosa-making experience. Five stars!',
       rating: 5,
     },
     {
-      name: 'M Sireesha ',
-      image: 'https://res.cloudinary.com/dp5t3oidu/image/upload/v1750184950/WhatsApp_Image_2025-06-17_at_23.57.23_626dd741_ry48oe.jpg',
-      text: 'Fresh chutneys are amazing! Saves so much time in the morning.',
+      name: 'Akshara basavaraj ',
+      image: 'https://res.cloudinary.com/diaafwq2f/image/upload/v1762160020/user-avatar-female_pjsw9j.png',
+      text: 'If you want to try authentic Karnataka break fast menu then this place is a must visit. I am unable to pick one item that stands out, I love all that is there in their menu. If we are busy and unable to visit them then we order the batter, believe you me, it is as authentic and hygiene as it can get with no preservatives.',
       rating: 5,
     },
   ];
