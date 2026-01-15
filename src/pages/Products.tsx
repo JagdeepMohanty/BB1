@@ -58,7 +58,7 @@ export function Products() {
         name: 'Butter Dosa Batter',
         image: 'https://th.bing.com/th/id/OIP.Qhl2NtDKcAYxSmcjPH_H2QHaGP?rs=1&pid=ImgDetMain',
         description: 'Tasty desi cow butter blended into fresh Dosa batter. Ideal for Butter masala Dosa.',
-        price: '800ml-₹75.00 , 450ml-₹55.00 ',
+        price: '800ml-₹90.00 , 450ml-₹55.00 ',
       },
       {
         name: 'Palak Magic Dosa Batter',
