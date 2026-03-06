@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { TestimonialCard } from '../components/TestimonialCard';
 import { ProductCard } from '../components/ProductCard';
-import AutoPlayVideo from '../components/AutoPlayVideo';
 
 export function Home() {
   const popularProducts = [
@@ -126,38 +125,6 @@ export function Home() {
               <p className="text-gray-600 dark:text-gray-300">
                 Carefully monitored fermentation process (No Soda) for optimal taste.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Video Showcase Section */}
-      <section className="py-24 bg-gradient-to-br from-amber-100 via-orange-50 to-amber-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="section-title">See Our Process</h2>
-            <p className="section-subtitle">Watch how we prepare our authentic batters with traditional methods</p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="card overflow-hidden">
-              <AutoPlayVideo 
-                src="https://res.cloudinary.com/dp5t3oidu/video/upload/v1748361600/sample-video-1.mp4" 
-                className="aspect-video"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold">Traditional Grinding Process</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Stone grinding for authentic texture and taste</p>
-              </div>
-            </div>
-            <div className="card overflow-hidden">
-              <AutoPlayVideo 
-                src="https://res.cloudinary.com/dp5t3oidu/video/upload/v1748361600/sample-video-2.mp4" 
-                className="aspect-video"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold">Fresh Preparation Daily</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Made fresh every day with quality ingredients</p>
-              </div>
             </div>
           </div>
         </div>

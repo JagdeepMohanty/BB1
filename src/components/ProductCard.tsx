@@ -9,13 +9,13 @@ interface ProductCardProps {
 
 export const ProductCard = React.memo(function ProductCard({ name, image, description, price }: ProductCardProps) {
   return (
-    <div className="card overflow-hidden h-full flex flex-col transition-all duration-300">
+    <div className="group card overflow-hidden h-full flex flex-col transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
       <div className="relative overflow-hidden h-56">
         <img
           src={image}
           alt={name}
           loading="lazy"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
         />
       </div>
       <div className="p-6 flex flex-col flex-1">
