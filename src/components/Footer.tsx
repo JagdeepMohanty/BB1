@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 export function Footer() {
@@ -33,19 +34,19 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6 text-amber-400">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="#about" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">About Us</a></li>
-              <li><a href="#products" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">Products</a></li>
-              <li><a href="#how-to-order" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">How to Order</a></li>
-              <li><a href="#stores" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">Our Stores</a></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">About Us</Link></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">Products</Link></li>
+              <li><Link to="/how-to-order" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">How to Order</Link></li>
+              <li><Link to="/stores" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">Our Stores</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-bold mb-6 text-amber-400">Support</h3>
             <ul className="space-y-3">
-              <li><a href="#contact" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">Contact Us</a></li>
-              <li><a href="#community" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">Community</a></li>
-              <li><a href="#blog" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">Blog</a></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">Contact Us</Link></li>
+              <li><Link to="/community" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">Community</Link></li>
+              <li><Link to="/blog" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">Blog</Link></li>
             </ul>
           </div>
 
