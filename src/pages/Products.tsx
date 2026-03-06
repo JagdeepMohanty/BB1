@@ -69,7 +69,7 @@ export function Products() {
       {
         name: 'Set Dosa Batter',
         image: 'https://i.ytimg.com/vi/UboF2QmswPM/maxresdefault.jpg',
-        description: 'This is made of Rice, Urad dal, Methi,Flattened Rice, Sabudana (Sago), etc.This is named Set Dosa as it is served in a set of 3 Dosa’s in restaurants.',
+        description: 'This is made of Rice, Urad dal, Methi,Flattened Rice, Sabudana (Sago), etc.This is named Set Dosa as it is served in a set of 3 Dosa's in restaurants.',
         price: '800ml-₹90.00 , 450ml-₹55.00 ',
       },
       {
@@ -178,133 +178,43 @@ export function Products() {
         description: 'Healthy batter with perfect blend of high quality ragi flour.',
         price: '800ml-₹100.00 , 450ml-₹60.00',
       },
-      {
-        name: 'Millet Paddu Batter',
-        image: 'https://i.ytimg.com/vi/7ojr4NgauDM/maxresdefault.jpg',
-        description: 'Authentic Udupi batter infused with all 4 millets (Finger/ Foxtail/ Jowar/ Pearl)',
-        price: '800ml-₹100.00 , 450ml-₹60.00',
-      },
-      {
-        name: 'Chilli Cheese Paddu batter ',
-        image: 'https://i.ytimg.com/vi/676-FkxfhrE/maxresdefault.jpg',
-        description: 'Cheese batter variant has various spices /herbs in it.',
-        price: '800ml-₹110.00 , 450ml-₹70.00',
-      },
     ],
-    roti: [
-      {
-        name: 'Phulka - (5 pieces)',
-        image: 'https://5.imimg.com/data5/GQ/FU/MY-39838230/phulka-roti-500x500.png',
-        description: 'Wheat Flour and Salt.',
-        price: '₹55.00',
-      },
-      {
-        name: 'Chapati - (5 pieces)',
-        image: 'https://th.bing.com/th/id/OIP.iABVK73UYywVNC4mweoCjgHaGN?rs=1&pid=ImgDetMain',
-        description: 'Wheat Flour, Salt and oil.',
-        price: '₹55.00',
-      },
-      {
-        name: 'Thepla - (5 pieces)',
-        image: 'https://th.bing.com/th/id/OIP.mLPze5nnmiRJ9culplB2rAHaHa?rs=1&pid=ImgDetMain',
-        description: 'Wheat flour, Methi leaves, Ginger, Spices, Green chili, Coriander leaves',
-        price: '₹75.00',
-      },
-    ],
-    chutney: [
-      {
-        name: 'Tomato Chutney - (250ml)',
-        image: 'https://th.bing.com/th/id/OIP.E1AJjvJmFw_DgyTQc4QXoAHaE8?rs=1&pid=ImgDetMain',
-        description: 'Tomato, Onion, Coconut, Fried Gram, Jeera, Garlic, Guntur Chilli, Byadagi Chilli, Salt, Green Chilli, Turmeric powder, Jaggery',
-        price: '₹50.00',
-      },
-      {
-        name: 'Coconut  Chutney - (250ml)',
-        image: 'https://res.cloudinary.com/dybzmpwaq/image/upload/v1753604672/pudina_kbg0ul.jpg',
-        description: 'Coconut, Fried Gram, Green Chilli, Pudina (Mint leaves), Tamarind, Salt, Jaggery.',
-        price: '₹45.00',
-      },
-      {
-        name: 'Chutney Powder - (200 gms)',
-        image: 'https://th.bing.com/th/id/OIP.Y4KMpEntiKsTlEnyU0LI5gHaFj?rs=1&pid=ImgDetMain',
-        description: 'Bengal Gram, Black Gram, Chilli, Salt, Tamarind, Mustard Asafoetida, Refined Oil, Jaggery.',
-        price: '₹125.00',
-      },
-    ],
-    gravy: [
-      {
-        name: 'Ready to cook Curry Paste  - (200 gms ) ',
-        image: 'https://keytomylime.com/wp-content/uploads/2023/11/Best-Tomato-Gravy-Recipe-720x720.jpg',
-        description: 'Tomato, Onion, Cashew, Fresh Cream, Sunflower,Oil,Garlic, Ginger,Salt , Red Chilli , Garam Masala, Spices,sugar',
-        price: '₹125.00',
-      },
-
-    ],
-    saveforme: [
-      {
-        name: 'BYOC',
-        image: 'https://rukminim2.flixcart.com/image/850/1000/kiew3gw0/container/w/8/q/2-5-litre-super-storer-small-tupperware-original-imafy7k76znmr7nr.jpeg?q=90&crop=false',
-        description: 'Bring Your Own Container',
-        price: 'For all 800 ml / 450 ml batters , avail 5 % off',
-      },
-      {
-        name: 'Family Packs ',
-        image: 'https://t3.ftcdn.net/jpg/03/72/05/60/360_F_372056014_cxUkbsQuBLNXAyKIGeHva8SxuGp2Cpmf.jpg',
-        description: 'Only upon bringing own containers . Standard Idli/Dosa Batter',
-        price: '1000ml-₹95.00 , 1500ml-₹135.00 , 2000 ml-₹175.00',
-      },
-    ]
-    // combo: [
-    //   {
-    //     name: 'Choose any 2 Batters from the menu, of 500ml each',
-    //     image: 'https://thumbs.dreamstime.com/z/south-indian-breakfast-idli-dosa-chutney-indian-breakfast-lentil-rice-pancake-also-known-as-dosa-dumplings-known-as-idli-158574513.jpg',
-    //     description: '',
-    //     price: '₹119.00',
-    //   },
-    //   {
-    //     name: 'Family Packs (Only upon bringing own containers)',
-    //     image: 'https://th.bing.com/th/id/OIP.s61yJEbF6CAb2Ky6d_EcSgHaI1?rs=1&pid=ImgDetMain',
-    //     description: 'Standard Idli/Dosa Batter BYOC (Bring your own container): For all 750ML packs, avail 5% off. Family pack prices are inclusive of discounts.',
-    //     price: '1000 ML - ₹95 , 1500 ML - ₹130, 2000 ML - ₹160',
-    //   },
-    // ],
   };
 
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen py-24">
       <div className="container mx-auto px-4">
-        <h1 className="section-title text-center mb-12">Our Products</h1>
-
-        {/* Idli Batters (Special Menu) */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-4">Idli Batters (Special Menu)</h2>
-          <p className="mb-6">
-            Elevate your breakfast game with our Fluffy Idli Batter. Specially crafted to create soft and spongy idli’s, this batter guarantees a delightful start to your day. Just steam and enjoy these delectable bite-sized delights with your favorite chutneys and sambar.
+        <div className="text-center mb-16">
+          <h1 className="section-title">Our Products</h1>
+          <p className="section-subtitle">
+            Explore our wide range of authentic Udupi batters
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        </div>
+
+        {/* Idli Batters */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8 text-center">Idli Batters</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {products.idli.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}
           </div>
         </section>
 
-        {/* Dosa Batters (Special Menu) */}
+        {/* Dosa Batters */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-4">Dosa Batters (Special Menu)</h2>
-          <p className="mb-6">
-            Unleash the magic of crispy, golden Dosas with our Classic Dosa Batter. Made from premium rice and urad dal, this batter is fermented to perfection, ensuring that each Dosa is light, airy, and irresistibly flavorful.
-          </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold mb-8 text-center">Dosa Batters</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {products.dosa.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}
           </div>
         </section>
 
-        {/* Weekend specialty batters */}
+        {/* Weekend Specialty */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-2">Weekend specialty batters One Special Batter every weekend!</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold mb-8 text-center">Weekend Specialty</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {products.weekendSpecialty.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}
@@ -313,98 +223,13 @@ export function Products() {
 
         {/* Paddu Batters */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-2">Paddu Batters</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold mb-8 text-center">Paddu Batters</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {products.paddu.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}
           </div>
         </section>
-
-        {/* Ready to Eat Rotis */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-2">Ready to Eat Rotis</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.roti.map((product) => (
-              <ProductCard key={product.name} {...product} />
-            ))}
-          </div>
-        </section>
-
-        {/* Fresh Chutney */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-2">Fresh Chutney</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.chutney.map((product) => (
-              <ProductCard key={product.name} {...product} />
-            ))}
-          </div>
-        </section>
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-2">Gravy</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.gravy.map((product) => (
-              <ProductCard key={product.name} {...product} />
-            ))}
-          </div>
-        </section>
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-2">Save For More</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.saveforme.map((product) => (
-              <ProductCard key={product.name} {...product} />
-            ))}
-          </div>
-        </section>
-
-<div className="w-[35%] mx-auto mt-2 font-['Poppins'] flex flex-col justify-start">
-  <h2 className="text-sm font-semibold mb-2 text-orange-700 text-center">
-    Preparation Estimates
-  </h2>
-  <div className="border border-orange-300 rounded-md shadow-sm overflow-x-auto">
-    <table className="w-full text-center text-[11px] border-collapse">
-      <thead className="bg-orange-600 text-white">
-        <tr>
-          <th className="w-[38%] py-[3px] border border-orange-300">Preparation</th>
-          <th className="w-[31%] py-[3px] border border-orange-300">800 ml</th>
-          <th className="w-[31%] py-[3px] border border-orange-300">450 ml</th>
-        </tr>
-      </thead>
-      <tbody className="bg-orange-50 text-gray-800">
-        <tr className="hover:bg-orange-100">
-          <td className="py-[3px] font-medium border border-orange-200">No. of Dosa's</td>
-          <td className="py-[3px] border border-orange-200">13–15</td>
-          <td className="py-[3px] border border-orange-200">7–9</td>
-        </tr>
-        <tr className="hover:bg-orange-100">
-          <td className="py-[3px] font-medium border border-orange-200">No. of Idli's</td>
-          <td className="py-[3px] border border-orange-200">18–20</td>
-          <td className="py-[3px] border border-orange-200">9–12</td>
-        </tr>
-        <tr className="hover:bg-orange-100">
-          <td className="py-[3px] font-medium border border-orange-200">No. of Paddu's</td>
-          <td className="py-[3px] border border-orange-200">25–27</td>
-          <td className="py-[3px] border border-orange-200">17–20</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-
-
-
-
-
-        {/* Combo */}
-       {/* <section>
-          <h2 className="text-2xl font-bold mb-2">Combo</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.combo.map((product) => (
-              <ProductCard key={product.name} {...product} />
-            ))}
-          </div>
-        </section> */}
       </div>
     </div>
   );

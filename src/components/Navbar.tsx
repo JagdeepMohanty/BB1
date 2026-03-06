@@ -45,19 +45,19 @@ export function Navbar() {
           </div>
 
           {/* CENTER - Icon Navigation (Desktop) */}
-          <div className="hidden md:flex items-center justify-center gap-6">
+          <div className="hidden md:flex items-center justify-center gap-6 flex-1">
             {navItems.map(({ id, label, icon: Icon }) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                onClick={(e) => scrollToSection(e, id)}
-                className="relative group"
-              >
-                <Icon className="w-6 h-6 text-gray-300 hover:text-white hover:scale-110 transition-all duration-200 cursor-pointer" />
-                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-gray-800 text-white rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+              <div key={id} className="relative group flex flex-col items-center">
+                <a
+                  href={`#${id}`}
+                  onClick={(e) => scrollToSection(e, id)}
+                >
+                  <Icon className="w-6 h-6 text-gray-300 hover:text-white hover:scale-110 transition-all duration-200 cursor-pointer" />
+                </a>
+                <span className="absolute top-full mt-2 px-2 py-1 text-xs bg-gray-800 text-white rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
                   {label}
                 </span>
-              </a>
+              </div>
             ))}
           </div>
 
