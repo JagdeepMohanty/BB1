@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
 :root {
   --primary: #f59e0b;
   --primary-dark: #d97706;
+  --primary-light: #fbbf24;
 }
 
 :root[data-theme='dark'] {
   --primary: #fbbf24;
   --primary-dark: #f59e0b;
+  --primary-light: #fcd34d;
 }
 
 * {
@@ -19,26 +23,47 @@
 
 @layer components {
   .nav-link {
-    @apply text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-dark transition-colors;
+    @apply text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light transition-all duration-300 font-medium relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
   }
 
   .mobile-nav-link {
-    @apply block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-dark transition-colors;
+    @apply block px-4 py-3 text-base font-medium text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light hover:bg-amber-50 dark:hover:bg-gray-800 rounded-lg transition-all duration-300;
   }
 
   .btn-primary {
-    @apply bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded transition-colors;
+    @apply bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300;
   }
 
   .section-title {
-    @apply text-3xl font-bold text-gray-900 dark:text-white mb-6;
+    @apply text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 font-['Playfair_Display'];
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12;
   }
 
   .card {
-    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden;
+    @apply bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden transition-all duration-300 border border-gray-100 dark:border-gray-700;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-2xl shadow-xl border border-white/20 dark:border-gray-700/50;
   }
 }
 
 body {
-  @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white;
+  @apply bg-gradient-to-br from-amber-50 via-white to-orange-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 text-gray-900 dark:text-white font-['Inter'];
 }

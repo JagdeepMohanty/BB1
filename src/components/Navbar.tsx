@@ -5,22 +5,36 @@ import { Menu, X } from 'lucide-react';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50">
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      scrolled 
+        ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl shadow-lg' 
+        : 'bg-transparent'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-xl font-bold text-gray-900 dark:text-white">
+            <Link to="/" className="flex items-center space-x-2 group">
+              <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-600 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                <span className="text-white font-bold text-xl">B</span>
+              </div>
+              <span className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent font-['Playfair_Display']">
                 Butter Batter
               </span>
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/about" className="nav-link">About</Link>
             <Link to="/products" className="nav-link">Products</Link>
@@ -35,7 +49,7 @@ export function Navbar() {
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="p-2 rounded-xl text-gray-700 dark:text-gray-200 hover:bg-amber-100 dark:hover:bg-gray-800 transition-all duration-300"
               aria-label="Toggle menu"
               aria-expanded={isOpen}
             >
@@ -45,10 +59,9 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900">
+        <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-t border-gray-200 dark:border-gray-800">
+          <div className="px-4 pt-2 pb-4 space-y-2">
             <Link to="/" className="mobile-nav-link" onClick={closeMenu}>Home</Link>
             <Link to="/about" className="mobile-nav-link" onClick={closeMenu}>About</Link>
             <Link to="/products" className="mobile-nav-link" onClick={closeMenu}>Products</Link>

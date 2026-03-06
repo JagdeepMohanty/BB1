@@ -51,47 +51,56 @@ export function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[70vh] sm:h-[75vh] md:h-[80vh] flex items-center">
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage:
-              'url(https://res.cloudinary.com/dp5t3oidu/image/upload/v1747986402/prfterwh5na5fhlrctax.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-50" />
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage:
+                'url(https://res.cloudinary.com/dp5t3oidu/image/upload/v1747986402/prfterwh5na5fhlrctax.jpg)',
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
-              Authentic Udupi Flavors, Straight to Your Kitchen!
+        <div className="container mx-auto px-4 relative z-10 py-32">
+          <div className="max-w-4xl">
+            <div className="inline-block mb-6 px-6 py-2 bg-amber-500/20 backdrop-blur-sm border border-amber-500/30 rounded-full">
+              <span className="text-amber-300 font-semibold text-sm tracking-wide">✨ AUTHENTIC UDUPI TRADITION</span>
+            </div>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight font-['Playfair_Display']">
+              Authentic Udupi Flavors,
+              <span className="block bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">Straight to Your Kitchen</span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 sm:mb-8">
+            <p className="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed max-w-2xl">
               Experience the taste of tradition with our fresh, hand-ground batters and authentic chutneys.
             </p>
             <div className="flex flex-wrap gap-4">
-              {/* 2. Changed <a> to <Link> and href to to */}
-              <Link to="/products" className="btn-primary">
-                Order Now
+              <Link to="/products" className="btn-primary text-lg">
+                Explore Products
               </Link>
-              {/* This link goes to a different page, so it's also updated */}
-              <Link to="/stores" className="btn-primary bg-white bg-opacity-20 hover:bg-opacity-30">
+              <Link to="/stores" className="btn-secondary text-lg">
                 Find a Store
               </Link>
             </div>
           </div>
         </div>
+        
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">
+            <div className="w-1 h-3 bg-white/50 rounded-full" />
+          </div>
+        </div>
       </section>
 
       {/* Introduction Section */}
-      <section className="py-16 bg-white dark:bg-gray-800">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-50/50 to-transparent dark:via-gray-800/30" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
             <h2 className="section-title">Welcome to Butter Batter</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-8">
+            <p className="section-subtitle">
               We bring the authentic taste of Udupi to your kitchen with our fresh, hand-ground batters and chutneys.
               Every product is made with love, following traditional recipes passed down through generations.
             </p>
@@ -134,10 +143,13 @@ export function Home() {
       </section>
 
       {/* Popular Products */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-900">
+      <section className="py-24">
         <div className="container mx-auto px-4">
-          <h2 className="section-title text-center mb-12">Popular Products</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="text-center mb-16">
+            <h2 className="section-title">Popular Products</h2>
+            <p className="section-subtitle">Handpicked favorites loved by our customers</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {popularProducts.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}
@@ -146,37 +158,43 @@ export function Home() {
       </section>
 
       {/* Quick Links */}
-      <section className="py-16 bg-white dark:bg-gray-800">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card p-6 text-center">
-              <ShoppingBag className="w-12 h-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Order Online</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-100 via-orange-50 to-amber-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="glass-card p-8 text-center group hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-amber-400 to-orange-600 rounded-2xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
+                <ShoppingBag className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3 font-['Playfair_Display']">Order Online</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                 Fresh batters delivered to your doorstep
               </p>
-              {/* 3. Changed <a> to <Link> and corrected the path */}
-              <Link to="/products" className="btn-primary">
+              <Link to="/products" className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                 Order Now
               </Link>
             </div>
-            <div className="card p-6 text-center">
-              <MapPin className="w-12 h-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Visit a Store</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+            <div className="glass-card p-8 text-center group hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-amber-400 to-orange-600 rounded-2xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3 font-['Playfair_Display']">Visit a Store</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                 Find your nearest Butter Batter outlet
               </p>
-              <Link to="/stores" className="btn-primary">
+              <Link to="/stores" className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                 Find Store
               </Link>
             </div>
-            <div className="card p-6 text-center">
-              <Phone className="w-12 h-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+            <div className="glass-card p-8 text-center group hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-amber-400 to-orange-600 rounded-2xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
+                <Phone className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3 font-['Playfair_Display']">Contact Us</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                 Questions? We're here to help
               </p>
-              <Link to="/contact" className="btn-primary">
+              <Link to="/contact" className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                 Get in Touch
               </Link>
             </div>
@@ -185,10 +203,13 @@ export function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-900">
+      <section className="py-24">
         <div className="container mx-auto px-4">
-          <h2 className="section-title text-center mb-12">What Our Customers Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="text-center mb-16">
+            <h2 className="section-title">What Our Customers Say</h2>
+            <p className="section-subtitle">Real stories from real people who love our products</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.name} {...testimonial} />
             ))}

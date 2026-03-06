@@ -41,44 +41,48 @@ export function Stores() {
   ];
 
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen py-24">
       <div className="container mx-auto px-4">
-        <h1 className="section-title text-center">Our Stores</h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="text-center mb-16">
+          <h1 className="section-title">Our Stores</h1>
+          <p className="section-subtitle">Visit us at any of our locations across Bangalore</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {stores.map((store) => (
             <div
               key={store.name}
-              className="card p-6 flex flex-col justify-between h-full min-h-[320px]"
+              className="glass-card p-8 flex flex-col h-full group hover:-translate-y-2 transition-all duration-500"
             >
-              <h2 className="text-xl font-semibold mb-4">{store.name}</h2>
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <MapPin className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-xl font-bold leading-tight">{store.name}</h2>
+              </div>
 
-              <div className="flex-1 flex flex-col justify-start gap-4">
-                {/* Address */}
-                <div className="flex items-start min-h-[80px]">
-                  <MapPin className="w-5 h-5 text-primary mt-1 mr-3" />
-                  <p className="text-gray-600 dark:text-gray-300">{store.address}</p>
+              <div className="flex-1 space-y-4 mb-6">
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-amber-600 dark:text-amber-400 mt-1 flex-shrink-0" />
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">{store.address}</p>
                 </div>
 
-                {/* Phone */}
-                <div className="flex items-start min-h-[30px]">
-                  <Phone className="w-5 h-5 text-primary mt-1 mr-3" />
-                  <p className="text-gray-600 dark:text-gray-300">{store.phone}</p>
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0" />
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">{store.phone}</p>
                 </div>
 
-                {/* Hours */}
-                <div className="flex items-start min-h-[30px]">
-                  <Clock className="w-5 h-5 text-primary mt-1 mr-3" />
-                  <p className="text-gray-600 dark:text-gray-300">{store.hours}</p>
+                <div className="flex items-start gap-3">
+                  <Clock className="w-5 h-5 text-amber-600 dark:text-amber-400 mt-1 flex-shrink-0" />
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">{store.hours}</p>
                 </div>
               </div>
 
-              {/* Get Directions Button */}
               {store.coordinates && (
                 <a
                   href={`https://www.google.com/maps?q=${store.coordinates.lat},${store.coordinates.lng}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary mt-6 w-fit px-4 py-2 text-sm"
+                  className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-center"
                 >
                   Get Directions
                 </a>

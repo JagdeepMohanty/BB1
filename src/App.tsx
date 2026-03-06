@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { LoadingSpinner } from './components/LoadingSpinner';
 
@@ -22,9 +23,9 @@ function App() {
       <ThemeProvider>
         <Router>
           <ScrollToTop />
-          <div className="min-h-screen">
+          <div className="min-h-screen flex flex-col">
             <Navbar />
-            <main>
+            <main className="flex-1 pt-20">
               <Suspense fallback={<LoadingSpinner />}>
                 <Routes>
                   <Route path="/" element={<Home />} />
@@ -39,6 +40,7 @@ function App() {
                 </Routes>
               </Suspense>
             </main>
+            <Footer />
           </div>
         </Router>
       </ThemeProvider>
