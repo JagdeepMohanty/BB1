@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { ThemeToggle } from './ThemeToggle';
 import { Menu, X } from 'lucide-react';
 
@@ -15,6 +14,21 @@ export function Navbar() {
 
   const closeMenu = () => setIsOpen(false);
 
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    closeMenu();
+  };
+
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       scrolled 
@@ -24,24 +38,24 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2 group">
+            <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="flex items-center space-x-2 group">
               <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-600 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
                 <span className="text-white font-bold text-xl">B</span>
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent font-['Playfair_Display']">
                 Butter Batter
               </span>
-            </Link>
+            </a>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/about" className="nav-link">About</Link>
-            <Link to="/products" className="nav-link">Products</Link>
-            <Link to="/how-to-order" className="nav-link">How to Order</Link>
-            <Link to="/stores" className="nav-link">Stores</Link>
-            <Link to="/community" className="nav-link">Community</Link>
-            <Link to="/contact" className="nav-link">Contact</Link>
+            <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="nav-link">Home</a>
+            <a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="nav-link">About</a>
+            <a href="#products" onClick={(e) => scrollToSection(e, 'products')} className="nav-link">Products</a>
+            <a href="#how-to-order" onClick={(e) => scrollToSection(e, 'how-to-order')} className="nav-link">How to Order</a>
+            <a href="#stores" onClick={(e) => scrollToSection(e, 'stores')} className="nav-link">Stores</a>
+            <a href="#community" onClick={(e) => scrollToSection(e, 'community')} className="nav-link">Community</a>
+            <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="nav-link">Contact</a>
             <ThemeToggle />
           </div>
 
@@ -62,13 +76,13 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-t border-gray-200 dark:border-gray-800">
           <div className="px-4 pt-2 pb-4 space-y-2">
-            <Link to="/" className="mobile-nav-link" onClick={closeMenu}>Home</Link>
-            <Link to="/about" className="mobile-nav-link" onClick={closeMenu}>About</Link>
-            <Link to="/products" className="mobile-nav-link" onClick={closeMenu}>Products</Link>
-            <Link to="/how-to-order" className="mobile-nav-link" onClick={closeMenu}>How to Order</Link>
-            <Link to="/stores" className="mobile-nav-link" onClick={closeMenu}>Stores</Link>
-            <Link to="/community" className="mobile-nav-link" onClick={closeMenu}>Community</Link>
-            <Link to="/contact" className="mobile-nav-link" onClick={closeMenu}>Contact</Link>
+            <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="mobile-nav-link">Home</a>
+            <a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="mobile-nav-link">About</a>
+            <a href="#products" onClick={(e) => scrollToSection(e, 'products')} className="mobile-nav-link">Products</a>
+            <a href="#how-to-order" onClick={(e) => scrollToSection(e, 'how-to-order')} className="mobile-nav-link">How to Order</a>
+            <a href="#stores" onClick={(e) => scrollToSection(e, 'stores')} className="mobile-nav-link">Stores</a>
+            <a href="#community" onClick={(e) => scrollToSection(e, 'community')} className="mobile-nav-link">Community</a>
+            <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="mobile-nav-link">Contact</a>
           </div>
         </div>
       )}
