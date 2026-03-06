@@ -1,26 +1,53 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, CheckCircle } from 'lucide-react';
+
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
 
 export function Contact() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
-    subject: '',
     message: '',
   });
+  const [showSuccess, setShowSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const { name, email, subject, message } = formData;
+    const { name, email, message } = formData;
 
-    const mailtoLink = `mailto:community@butterbatter.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\n${message}`
-    )}`;
+    // Create properly formatted email subject and body
+    const subject = `Butter Batter Website Inquiry - ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
 
+    // Encode for URL
+    const encodedSubject = encodeURIComponent(subject);
+    const encodedBody = encodeURIComponent(body);
+
+    // Generate mailto link
+    const mailtoLink = `mailto:butterbattergo@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+
+    // Open email client
     window.location.href = mailtoLink;
+
+    // Show success message
+    setShowSuccess(true);
+
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
+
+    // Hide success message after 3 seconds
+    setTimeout(() => {
+      setShowSuccess(false);
+    }, 3000);
   };
 
   const handleChange = (
@@ -31,6 +58,12 @@ export function Contact() {
       ...prev,
       [name]: value,
     }));
+  };
+
+  const handleEmailClick = () => {
+    const subject = 'Butter Batter Customer Inquiry';
+    const encodedSubject = encodeURIComponent(subject);
+    window.location.href = `mailto:butterbattergo@gmail.com?subject=${encodedSubject}`;
   };
 
   return (
@@ -50,13 +83,16 @@ export function Contact() {
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      ‪+91 88923 24272‬
+                      +91 88923 24272
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="card p-6">
+              <button
+                onClick={handleEmailClick}
+                className="card p-6 w-full text-left hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+              >
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 text-primary mr-4" />
                   <div>
@@ -66,7 +102,7 @@ export function Contact() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </button>
 
               <div className="card p-6">
                 <div className="flex items-center">
@@ -88,13 +124,17 @@ export function Contact() {
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/Butterbattergo"
-                  className="text-gray-600 dark:text-gray-300 hover:text-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
                 >
                   Facebook
                 </a>
                 <a
                   href="https://www.instagram.com/butterbatter_go"
-                  className="text-gray-600 dark:text-gray-300 hover:text-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
                 >
                   Instagram
                 </a>
@@ -105,6 +145,17 @@ export function Contact() {
           {/* Contact Form */}
           <div>
             <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
+            
+            {/* Success Message */}
+            {showSuccess && (
+              <div className="mb-4 p-4 bg-green-100 dark:bg-green-900 border border-green-400 dark:border-green-600 rounded-lg flex items-center gap-2 animate-fade-in">
+                <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400" />
+                <p className="text-green-800 dark:text-green-200 text-sm">
+                  Email client opened! Your message is ready to send.
+                </p>
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} className="card p-6">
               <div className="space-y-4">
                 <div>
@@ -147,25 +198,6 @@ export function Contact() {
 
                 <div>
                   <label
-                    htmlFor="subject"
-                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                  >
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-primary focus:outline-none"
-                    required
-                    aria-required="true"
-                  />
-                </div>
-
-                <div>
-                  <label
                     htmlFor="message"
                     className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
                   >
@@ -192,6 +224,6 @@ export function Contact() {
         </div>
        
       </div>
-    </div>
-  );
+    </div>
+  );
 }
