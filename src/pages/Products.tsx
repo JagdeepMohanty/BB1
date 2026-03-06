@@ -69,7 +69,7 @@ export function Products() {
       {
         name: 'Set Dosa Batter',
         image: 'https://i.ytimg.com/vi/UboF2QmswPM/maxresdefault.jpg',
-        description: 'This is made of Rice, Urad dal, Methi,Flattened Rice, Sabudana (Sago), etc.This is named Set Dosa as it is served in a set of 3 Dosa's in restaurants.',
+        description: 'This is made of Rice, Urad dal, Methi,Flattened Rice, Sabudana (Sago), etc. This is named Set Dosa as it is served in a set of 3 Dosas in restaurants.',
         price: '800ml-₹90.00 , 450ml-₹55.00 ',
       },
       {
