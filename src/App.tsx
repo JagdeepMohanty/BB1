@@ -5,6 +5,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 import { ScrollToTop } from './components/ScrollToTop';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import FloatingHomeButton from './components/FloatingHomeButton';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Products } from './pages/Products';
@@ -36,6 +37,7 @@ function App() {
             </Routes>
           </main>
           <Footer />
+          <FloatingHomeButton />
         </div>
       </ThemeProvider>
     </ErrorBoundary>

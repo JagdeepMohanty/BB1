@@ -38,13 +38,15 @@ const AutoPlayVideo: React.FC<AutoPlayVideoProps> = ({ src, className = '' }) =>
   return (
     <video
       ref={videoRef}
-      src={src}
+      autoPlay
       muted
       loop
       playsInline
-      controls
-      className={`w-full h-full rounded-lg shadow-md object-cover ${className}`}
-    />
+      preload="auto"
+      className={`w-full h-auto object-contain rounded-lg ${className}`}
+    >
+      <source src={src} type="video/mp4" />
+    </video>
   );
 };
 
