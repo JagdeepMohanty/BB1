@@ -226,14 +226,17 @@ export function Home() {
             <a
               href="https://www.facebook.com/Butterbattergo"
               className="text-gray-600 dark:text-gray-300 hover:text-primary"
-              target="_blank" // Good practice to open external links in a new tab
-              rel="noopener noreferrer"
               target="_blank"
               rel="noopener noreferrer"
             >
               Facebook
             </a>
-            <a href="https://www.instagram.com/butterbatter_go" className="text-gray-600 dark:text-gray-300 hover:text-primary">
+            <a 
+              href="https://www.instagram.com/butterbatter_go" 
+              className="text-gray-600 dark:text-gray-300 hover:text-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Instagram
             </a>
           </div>
