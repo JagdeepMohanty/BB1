@@ -1,16 +1,9 @@
 import React from 'react';
 import { ThemeToggle } from './ThemeToggle';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Home, Info, Package, ShoppingCart, MapPin, Users, Phone, FileText } from 'lucide-react';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
-  const [scrolled, setScrolled] = React.useState(false);
-
-  React.useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const closeMenu = () => setIsOpen(false);
 
@@ -29,41 +22,53 @@ export function Navbar() {
     closeMenu();
   };
 
+  const navItems = [
+    { id: 'home', label: 'Home', icon: Home },
+    { id: 'about', label: 'About', icon: Info },
+    { id: 'products', label: 'Products', icon: Package },
+    { id: 'how-to-order', label: 'How to Order', icon: ShoppingCart },
+    { id: 'stores', label: 'Stores', icon: MapPin },
+    { id: 'community', label: 'Community', icon: Users },
+    { id: 'contact', label: 'Contact', icon: Phone },
+    { id: 'blog', label: 'Blog', icon: FileText },
+  ];
+
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled 
-        ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl shadow-lg' 
-        : 'bg-transparent'
-    }`}>
+    <nav className="fixed top-0 w-full z-50 bg-gray-900 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
+        <div className="flex items-center justify-between h-16">
+          {/* LEFT - Logo */}
           <div className="flex items-center">
-            <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="flex items-center space-x-2 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-600 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">B</span>
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent font-['Playfair_Display']">
-                Butter Batter
-              </span>
+            <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="font-bold text-xl text-white hover:text-amber-400 transition-colors duration-200">
+              Butter Batter
             </a>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="nav-link">Home</a>
-            <a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="nav-link">About</a>
-            <a href="#products" onClick={(e) => scrollToSection(e, 'products')} className="nav-link">Products</a>
-            <a href="#how-to-order" onClick={(e) => scrollToSection(e, 'how-to-order')} className="nav-link">How to Order</a>
-            <a href="#stores" onClick={(e) => scrollToSection(e, 'stores')} className="nav-link">Stores</a>
-            <a href="#community" onClick={(e) => scrollToSection(e, 'community')} className="nav-link">Community</a>
-            <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="nav-link">Contact</a>
-            <ThemeToggle />
+          {/* CENTER - Icon Navigation (Desktop) */}
+          <div className="hidden md:flex items-center justify-center gap-6">
+            {navItems.map(({ id, label, icon: Icon }) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                onClick={(e) => scrollToSection(e, id)}
+                className="relative group"
+              >
+                <Icon className="w-6 h-6 text-gray-300 hover:text-white hover:scale-110 transition-all duration-200 cursor-pointer" />
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-gray-800 text-white rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                  {label}
+                </span>
+              </a>
+            ))}
           </div>
 
-          <div className="md:hidden flex items-center gap-2">
+          {/* RIGHT - Theme Toggle */}
+          <div className="flex items-center gap-2">
             <ThemeToggle />
+            
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-xl text-gray-700 dark:text-gray-200 hover:bg-amber-100 dark:hover:bg-gray-800 transition-all duration-300"
+              className="md:hidden p-2 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800 transition-all duration-200"
               aria-label="Toggle menu"
               aria-expanded={isOpen}
             >
@@ -73,16 +78,21 @@ export function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-t border-gray-200 dark:border-gray-800">
-          <div className="px-4 pt-2 pb-4 space-y-2">
-            <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="mobile-nav-link">Home</a>
-            <a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="mobile-nav-link">About</a>
-            <a href="#products" onClick={(e) => scrollToSection(e, 'products')} className="mobile-nav-link">Products</a>
-            <a href="#how-to-order" onClick={(e) => scrollToSection(e, 'how-to-order')} className="mobile-nav-link">How to Order</a>
-            <a href="#stores" onClick={(e) => scrollToSection(e, 'stores')} className="mobile-nav-link">Stores</a>
-            <a href="#community" onClick={(e) => scrollToSection(e, 'community')} className="mobile-nav-link">Community</a>
-            <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="mobile-nav-link">Contact</a>
+        <div className="md:hidden bg-gray-900 border-t border-gray-800">
+          <div className="px-4 py-4 space-y-3">
+            {navItems.map(({ id, label, icon: Icon }) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                onClick={(e) => scrollToSection(e, id)}
+                className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-lg transition-all duration-200"
+              >
+                <Icon className="w-5 h-5" />
+                <span className="text-sm font-medium">{label}</span>
+              </a>
+            ))}
           </div>
         </div>
       )}
