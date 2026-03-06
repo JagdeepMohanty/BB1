@@ -273,11 +273,11 @@ export function Products() {
   return (
     <div className="min-h-screen py-16">
       <div className="container mx-auto px-4">
-        <h1 className="section-title text-center">Our Products</h1>
+        <h1 className="section-title text-center mb-12">Our Products</h1>
 
         {/* Idli Batters (Special Menu) */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-2">Idli Batters (Special Menu)</h2>
+          <h2 className="text-2xl font-bold mb-4">Idli Batters (Special Menu)</h2>
           <p className="mb-6">
             Elevate your breakfast game with our Fluffy Idli Batter. Specially crafted to create soft and spongy idli’s, this batter guarantees a delightful start to your day. Just steam and enjoy these delectable bite-sized delights with your favorite chutneys and sambar.
           </p>
@@ -290,7 +290,7 @@ export function Products() {
 
         {/* Dosa Batters (Special Menu) */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-2">Dosa Batters (Special Menu)</h2>
+          <h2 className="text-2xl font-bold mb-4">Dosa Batters (Special Menu)</h2>
           <p className="mb-6">
             Unleash the magic of crispy, golden Dosas with our Classic Dosa Batter. Made from premium rice and urad dal, this batter is fermented to perfection, ensuring that each Dosa is light, airy, and irresistibly flavorful.
           </p>

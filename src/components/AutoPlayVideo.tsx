@@ -1,7 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from 'react';
 
-const AutoPlayVideo = ({ src }) => {
-  const videoRef = useRef(null);
+interface AutoPlayVideoProps {
+  src: string;
+  className?: string;
+}
+
+const AutoPlayVideo: React.FC<AutoPlayVideoProps> = ({ src, className = '' }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -9,14 +14,14 @@ const AutoPlayVideo = ({ src }) => {
         entries.forEach((entry) => {
           if (videoRef.current) {
             if (entry.isIntersecting) {
-              videoRef.current.play(); // Play when in view
+              videoRef.current.play().catch(() => {});
             } else {
-              videoRef.current.pause(); // Pause when out of view
+              videoRef.current.pause();
             }
           }
         });
       },
-      { threshold: 0.5 } // video must be 50% visible
+      { threshold: 0.5 }
     );
 
     if (videoRef.current) {
@@ -37,8 +42,8 @@ const AutoPlayVideo = ({ src }) => {
       muted
       loop
       playsInline
-      controls // so user can pause manually too
-      className="w-full h-full rounded-lg shadow-md object-cover"
+      controls
+      className={`w-full h-full rounded-lg shadow-md object-cover ${className}`}
     />
   );
 };

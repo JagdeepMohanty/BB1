@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, ShoppingBag, MapPin, Phone } from 'lucide-react';
 import { TestimonialCard } from '../components/TestimonialCard';
 import { ProductCard } from '../components/ProductCard';
-import AutoPlayVideo from "../components/AutoPlayVideo";
+import AutoPlayVideo from '../components/AutoPlayVideo';
 import { Link } from 'react-router-dom'; // 1. Import Link
 
 export function Home() {
@@ -11,19 +11,19 @@ export function Home() {
       name: 'Classic Idli Batter',
       image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800',
       description: 'Perfect fermented batter for soft, fluffy idlis.',
-      link: '/products#idli',
+      price: '800ml-₹80.00 , 450ml-₹50.00',
     },
     {
       name: 'Crispy Dosa Mix',
       image: 'https://i.pinimg.com/originals/00/07/8c/00078c3a5782b1367a6cdfcc03f710a9.jpg',
       description: 'Traditional dosa batter for crispy, golden browns dosas.',
-      link: '/products#dosa',
+      price: '800ml-₹80.00 , 450ml-₹50.00',
     },
     {
       name: 'Fresh Chutney Pack',
       image: 'https://images.unsplash.com/photo-1626200419199-391ae4be7a41?auto=format&fit=crop&w=800',
       description: 'Assorted fresh chutneys made daily.',
-      link: '/products#chutney',
+      price: '₹45.00 - ₹50.00',
     },
   ];
 
@@ -51,7 +51,7 @@ export function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center">
+      <section className="relative h-[70vh] sm:h-[75vh] md:h-[80vh] flex items-center">
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -66,10 +66,10 @@ export function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
               Authentic Udupi Flavors, Straight to Your Kitchen!
             </h1>
-            <p className="text-xl text-gray-200 mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 sm:mb-8">
               Experience the taste of tradition with our fresh, hand-ground batters and authentic chutneys.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -206,6 +206,8 @@ export function Home() {
               href="https://www.facebook.com/Butterbattergo"
               className="text-gray-600 dark:text-gray-300 hover:text-primary"
               target="_blank" // Good practice to open external links in a new tab
+              rel="noopener noreferrer"
+              target="_blank"
               rel="noopener noreferrer"
             >
               Facebook

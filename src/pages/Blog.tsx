@@ -49,7 +49,7 @@ export function Blog() {
                 </p>
                 <a
                   href={`/blog/${post.title.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="text-primary hover:text-primary-dark transition-colors"
+                  className="text-primary hover:text-primary-dark transition-colors font-medium"
                 >
                   Read More →
                 </a>

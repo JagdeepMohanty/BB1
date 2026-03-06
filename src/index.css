@@ -12,6 +12,11 @@
   --primary-dark: #f59e0b;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) transparent;
+}
+
 @layer components {
   .nav-link {
     @apply text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-dark transition-colors;
