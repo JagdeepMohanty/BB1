@@ -9,13 +9,13 @@ export function Home() {
       name: 'Classic Idli Batter',
       image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800',
       description: 'Perfect fermented batter for soft, fluffy idlis.',
-      price: '800ml-₹80.00 , 450ml-₹50.00',
+      price: '800ml-₹85.00 , 450ml-₹55.00',
     },
     {
       name: 'Crispy Dosa Mix',
       image: 'https://i.pinimg.com/originals/00/07/8c/00078c3a5782b1367a6cdfcc03f710a9.jpg',
       description: 'Traditional dosa batter for crispy, golden browns dosas.',
-      price: '800ml-₹80.00 , 450ml-₹50.00',
+      price: '800ml-₹85.00 , 450ml-₹55.00',
     },
     {
       name: 'Fresh Chutney Pack',
