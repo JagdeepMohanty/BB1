@@ -174,7 +174,7 @@ export function Products() {
       },
       {
         name: 'Ragi Paddu Batter',
-        image: 'https://i.ytimg.com/vi/DqbAEhnT84o/maxresdefault.jpg',
+        image: 'https://www.cookwithkushi.com/wp-content/uploads/2022/02/ragi_dosa_millet_dosa-360x360.jpg',
         description: 'Healthy batter with perfect blend of high quality ragi flour.',
         price: '800ml-₹105.00 , 450ml-₹65.00',
       },
